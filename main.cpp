@@ -18,8 +18,8 @@ int main(int argc, char *argv[])
     phbxLayout->addWidget(pcmdC);
     phbxLayout->addWidget(pcmdD);
 
-  //  pvbxLayout->setMargin(5);
- //   pvbxLayout->setSpacing(15);
+    pvbxLayout->setMargin(5);
+   pvbxLayout->setSpacing(15);
     pvbxLayout->addWidget(pcmdA);
     pvbxLayout->addWidget(pcmdB);
     pvbxLayout->addLayout(phbxLayout);
