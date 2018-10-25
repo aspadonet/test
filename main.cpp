@@ -11,6 +11,10 @@ int main(int argc, char *argv[])
     QPushButton* pcmdC = new QPushButton("C");
     QPushButton* pcmdD = new QPushButton("D");
 
+    QPushButton* Ok = new QPushButton("OK");
+    QVBoxLayout* under = new QVBoxLayout;
+    under->addWidget(Ok);
+    Ok->setEnabled(false);
     QVBoxLayout* pvbxLayout = new QVBoxLayout;
     QHBoxLayout* phbxLayout = new QHBoxLayout;
  //   phbxLayout->setContentsMargins(5, 5, 5, 5);
@@ -23,7 +27,10 @@ int main(int argc, char *argv[])
     pvbxLayout->addWidget(pcmdA);
     pvbxLayout->addWidget(pcmdB);
     pvbxLayout->addLayout(phbxLayout);
+    pvbxLayout->addLayout(under);
     w.setLayout(pvbxLayout);
+    //w.setLayout(under);
+    w.setWindowTitle("test window");
 
 
     w.show();
